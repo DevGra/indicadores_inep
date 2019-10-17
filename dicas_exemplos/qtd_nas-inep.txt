@@ -1,0 +1,36 @@
+CO_LOCAL_OFERTA                    CO_UF                  CO_MUNICIPIO                    IN_CAPITAL 
+      2112                          2112                       2112                          2112 
+CO_OCDE_AREA_GERAL       CO_OCDE_AREA_ESPECIFICA        CO_OCDE_AREA_DETALHADA            TP_GRAU_ACADEMICO 
+       250                           250                        250                         313 
+DT_AUTORIZACAO_CURSO             IN_INTEGRAL               IN_MATUTINO                   IN_VESPERTINO 
+       35693                          2112                      2112                         2112 
+IN_NOTURNO               IN_OFERECE_DISC_SEMI_PRES       NU_PERC_CARGA_SEMI_PRES      QT_INGRESSO_PROCESSO_SELETIVO 
+       2112                           2112                      22061                        35693 
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CO_LOCAL_OFERTA 		- 2112  - EAD
+CO_UF           		- 2112  - EAD
+CO_MUNICIPIO 			- 2112  - EAD
+IN_CAPITAL 			- 2112  - EAD
+IN_INTEGRAL 			- 2112  - EAD
+IN_MATUTINO 			- 2112  - EAD
+IN_VESPERTINO 			- 2112  - EAD
+IN_NOTURNO 			- 2112  - EAD
+IN_OFERECE_DISC_SEMI_PRES 	- 2112	- EAD(verificar se realmente é EAD)
+-------------------------------
+
+CO_OCDE_AREA_GERAL       - 250   - cod de identificação geral do curso       - 9
+CO_OCDE_AREA_ESPECIFICA  - 250   - cod de identificação especifica do curso  - 99
+CO_OCDE_AREA_DETALHADA   - 250   - cod de identificação detalhada do curso   - 999
+-------------------------------  
+
+TP_GRAU_ACADEMICO        - 313   - os dados faltantes estão relacionados com o NO_CURSO com os nomes ABI, com algumas exceções de nomes que não são ABI. 
+-------------------------------
+
+DT_AUTORIZACAO_CURSO          - 35693   - sem info
+QT_INGRESSO_PROCESSO_SELETIVO - 35693	- sem info
+-------------------------------------
+
+NU_PERC_CARGA_SEMI_PRES       - 22061   - nao oferece
+
