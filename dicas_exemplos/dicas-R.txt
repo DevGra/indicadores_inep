@@ -1,0 +1,23 @@
+﻿source("settings.R")
+source("minhas_fubcoes.R")
+load("objetos.Rdata")
+
+o source serve para carregar scripts R, ele roda como se estivesse no teu código principal, então se tiver algo como usuário e senha em forma de texto pode colocar no settings.R
+
+exemplo de settings.R
+user = "gledson"
+password = "123"
+
+no arquivo principal você vai utilizar a informação do setting, é só usar o source e chamar como se estivesse no próprio principal.
+
+source("settings.R")
+conexão = funcao_que_usa_user(user, password)
+se estiver dentro do mesmo projeto no Rstudio e arquivo principal estiver na mesma pasta do settings.R vai funcionar.
+no source pode especificar o endereço completo.
+A diferença do settings.R para o obj.Rdata é que o Rdata guarda o objeto de dados no formato do R.
+
+seguindo o exemplo do settings poderia ter algo como:
+
+credenciais <- list(user= "gledson", password="123")
+save(credenciais,"credenciais.Rdata")
+depois dá um load("credenciais.Rdata") no arquivo principal que vai estar disponível um objeto da classe lista com as credenciais dentro.

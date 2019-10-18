@@ -1,0 +1,69 @@
+﻿#---- how to modify a data frame in R
+
+#-- HOW TO WORK []
+df[1:10,]  #seleciona as 10 primeiras linhas e todas as colunas do df
+df[3:9,]   #seleciona da terceira até a nona linha e todas as colunas do df
+df[c(4,100),] #seleciona a linha 4 e a linha 100. E todas as colunas do df
+is.data.frame(df[1,]) #TRUE - este é um df, e, não precisa de drop=F.
+df[,1] 		      # extrai os valores da coluna 1, não é um df.
+df[,1,drop=F]         #para manter como um data frame
+is.data.frame(df[,1,drop=F])  #TRUE
+
+#-- ADD COLUMNS
+df$column_add <- df$col1 * df$col4  #adiciona uma coluna no df que é a multiplicacao da coluna 1 pela 4.
+
+#-- REMOVE COLUMNS
+df$a_column <- NULL  #remove a coluna
+
+# ------------ filtering data frame
+filter_df <- df$column < 2  # filtra a coluna com os dados que são maiores que 2.
+df[filter_df,]       # mostra o df com as linhas selecionadas
+df[df$column > 40,]  # outra maneira de mostrar o df com a linha selecionadas
+df[df$column2 > 40 & df$column5 < 20,]   # mostra a(s) linhas do df de acordo com a condicao.
+df[df$column == "string que se quer encontrar",]  # mostra o df resultante somente com a string escolhida.
+levels(df$column)  # para variaveis categoricas(factor) - exibe o nome das variaveis(character).
+
+# ----------- CREATE DATA FRAME ------------------
+my_df <- data.frame(dataset1, dataset2 ...)  # cria o df de uma base de dados, onde cada datset sera o nome da 
+	coluna.
+
+colnames(my_df) <- c("Pais", "Cod", "Regiao")  # muda os nomes das colunas
+ou
+my_df <- data.frame(Pais=dataset1, Cod=dataset2 ...) # passando direto
+
+
+# ------------- MERGING DATA FRAMES ---------------
+
+merged <- merge(df1, df2, by.x = "nome da coluna em df1", by.y = "nome da coluna em df2")
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

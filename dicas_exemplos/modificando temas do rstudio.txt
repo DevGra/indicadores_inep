@@ -1,0 +1,19 @@
+﻿- caminho dos tems do rstudio
+C:\Program Files\RStudio\resources\themes
+
+- como editar um tema
+i am new to R Studio and i would like to share how i was able to customize the color scheme of R Studio:
+
+How to change the color of comments in Rstudio
+
+Rstudio Pane Appearance > Set editor theme to monokai
+Right click on editor pane > Inspect > find the specific file name (i.e. 838C7F60FB885BB7E5EED7F698E453B9.cache.css)
+Open drive C > open Progam Files folder > open Rstudio folder
+Open www folder > rstudio folder > find the 838C7F60FB885BB7E5EED7F698E453B9.cache.css (name of the theme you want to change)
+Make a backup copy of the original
+Change .ace_comment {color: #75715E} to .ace_comment {color: #F92672} > save to another location (don't change file name)
+Copy the recently saved code and paste it in rstudio folder (step 4) > replace the original 838C7F60FB885BB7E5EED7F698E453B9.cache.css file with the modified 838C7F60FB885BB7E5EED7F698E453B9.cache.csss file
+Click continue
+Quit Rstudio
+Open Rstudio
+Check if the color of comment has changed from nightsand(#75715E) to orchid(#F92672)
